@@ -1,0 +1,74 @@
+.modal .mask{
+	display: none;
+	background: rgba(0, 0, 0, 0.6);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	cursor: default;
+}
+
+.modal:target .mask{
+    display: block;
+}
+
+.modal:target .modal-dialog {
+    transform: translate(0, 0);
+    top: 0;
+}
+
+.modal-dialog {
+  	position: fixed;
+  	left: 100px;
+  	top:  100px;
+  	z-index: 11;
+  	transform: translate(0, -500%);
+  	transition: transform 0.4s ease-out;
+}
+
+.modal-dialog img{
+	width: 100%;
+	height: auto;
+}
+
+#close-button{
+	background: url("../images/close.png") no-repeat;
+	cursor: pointer;
+	top: 40px;
+	left: 870px;
+	position: absolute;
+	width: 27px;
+    height: 28px;
+	z-index: 12;
+}
+
+#dvd{
+    background: url("../images/DVD.png") no-repeat;
+    top: 200px;
+    left: 150px;
+    width: 534px;
+    height: 346px;
+    position: absolute;
+    z-index: 12;
+    transform: scale(0.1) rotateZ(720deg) ; 
+}
+
+.modal:target #dvd{
+    transform: scale(1) rotateZ(0deg); 
+    transition: transform 0.4s ease-out 0.4s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
