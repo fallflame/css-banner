@@ -5,7 +5,7 @@
 
 	$slider.addEventListener("mouseenter", function(){
 		timeout = setTimeout(function(){
-			location.hash='#modal';
+			document.getElementById("modal").className = 'modal show';
 		} ,3000);
 	});
 

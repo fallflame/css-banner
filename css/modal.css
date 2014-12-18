@@ -10,11 +10,11 @@
 	cursor: default;
 }
 
-.modal:target .mask{
+.modal.show .mask{
     display: block;
 }
 
-.modal:target .modal-dialog {
+.modal.show .modal-dialog {
     transform: translate(0, 0);
     top: 0;
 }
@@ -55,7 +55,7 @@
     transform: scale(0.1) rotateZ(720deg) ; 
 }
 
-.modal:target #dvd{
+.modal.show #dvd{
     transform: scale(1) rotateZ(0deg); 
     transition: transform 0.4s ease-out 0.4s;
 }
