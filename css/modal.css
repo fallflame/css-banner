@@ -1,64 +1,172 @@
-.modal .mask{
+.modal {
 	display: none;
-	background: rgba(0, 0, 0, 0.6);
 	position: fixed;
 	top: 0;
-	left: 0;
 	right: 0;
 	bottom: 0;
+	left: 0;
 	z-index: 10;
-	cursor: default;
+	background: rgba(0, 0, 0, 0.8);
+	opacity: 0;
 }
 
-.modal.show .mask{
-    display: block;
-}
-
-.modal.show .modal-dialog {
-    transform: translate(0, 0);
-    top: 0;
+.modal.show{
+	display: block;
+	opacity: 1;
+	transition: 1s opacity;
 }
 
 .modal-dialog {
-  	position: fixed;
-  	left: 100px;
-  	top:  100px;
-  	z-index: 11;
-  	transform: translate(0, -500%);
-  	transition: transform 0.4s ease-out;
+	background: url("../images/background.jpg") no-repeat;
+	margin: 30px auto;
+	position: relative;
+	width: 960px;
+	height: 600px;
+	font: bold 10px Avenir;
+	color: #fff;
 }
 
-.modal-dialog img{
-	width: 100%;
-	height: auto;
+.modal-dialog > .logo{
+	background: url("../images/watch-dog-logo.png") no-repeat;
+	top: 20px;
+	left: 20px;
+	width: 199px;
+	height: 32px;
+	position: absolute;
+}
+.modal-dialog > .logo-decoration{
+	background: url("../images/logo-decoration.png") no-repeat;
+	top: -55px;
+	left: 2px;
+	width: 186px;
+	height: 185px;
+	position: absolute;
 }
 
-#close-button{
+.modal-dialog > .close{
 	background: url("../images/close.png") no-repeat;
 	cursor: pointer;
 	top: 40px;
 	left: 870px;
 	position: absolute;
-	width: 27px;
-    height: 28px;
-	z-index: 12;
+	width: 24px;
+	height: 25px;
 }
 
-#dvd{
-    background: url("../images/DVD.png") no-repeat;
-    top: 200px;
-    left: 150px;
-    width: 534px;
-    height: 346px;
-    position: absolute;
-    z-index: 12;
-    transform: scale(0.1) rotateZ(720deg) ; 
+/* MENU */
+.modal-dialog > .menu{
+	position: absolute;
+	left: 300px;
+	cursor: pointer;
 }
 
-.modal.show #dvd{
-    transform: scale(1) rotateZ(0deg); 
-    transition: transform 0.4s ease-out 0.4s;
+.modal-dialog > .menu > ul > li {
+	display: inline-block;
+	padding : 30px 40px 13px 30px ;
+	font-size: 1.4em;
 }
+
+.modal-dialog > .menu > ul > li.active {
+	background-color: #2dbcf1;
+}
+
+.modal-dialog > .menu > ul > li:hover:not(.active) {
+	color: #2dbcf1;
+}
+
+/* CONTENT */
+.modal-dialog > .text1 {
+	font-size: 5.34em;
+	position: absolute;
+	top: 90px;
+	left: 50px;
+}
+
+.modal-dialog > .text2 {
+	font-size: 10.98em;
+	position: absolute;
+	top: 120px;
+	left: 80px;
+}
+
+.modal-dialog > .text3 {
+	font-size: 1.44em;
+	position: absolute;
+	top: 140px;
+	left: 400px;
+}
+
+.modal-dialog > .text4 {
+	font-size: 1.44em;
+	position: absolute;
+	top: 160px;
+	left: 400px;
+}
+
+.modal-dialog > .dvd-ps4 {
+	background: url("../images/dvd-ps4.png") no-repeat;
+	width: 207px;
+	height: 268px;
+	position: absolute;
+	bottom: 88px;
+	left: 248px;
+}
+
+.modal-dialog > .dvd-ps3 {
+	background: url("../images/dvd-ps3.png") no-repeat;
+	width: 224px;
+	height: 290px;	
+	position: absolute;
+	bottom: 88px;
+	left: 465px;
+}
+
+.modal-dialog > .pre-order {
+	background: url("../images/pre-order.png") no-repeat;
+	width: 192px;
+	height: 68px;
+	position: absolute;
+	bottom: 24px;
+	right: 69px;
+}
+
+/* Footer */
+
+.modal-dialog > .footer > .text {
+	font: normal 1.2em "Lucida Grande";
+	position: absolute;
+	bottom: 50px;
+	left: 300px;
+}
+
+.modal-dialog > .footer > .logo-ubisoft {
+	background: url("../images/logo-ubisoft.png") no-repeat;
+	width: 148px;
+	height: 45px;
+	position: absolute;
+	bottom: 16px;
+	left: 22px;
+}
+
+.modal-dialog > .footer > .button-facebook {
+	background: url("../images/button-facebook.png") no-repeat;
+	width: 154px;
+	height: 24px;
+	position: absolute;
+	bottom: 25px;
+	left: 282px;
+}
+
+.modal-dialog > .footer > .button-twitter {
+	background: url("../images/button-twitter.png") no-repeat;
+	width: 154px;
+	height: 24px;
+	position: absolute;
+	bottom: 25px;
+	left: 443px;
+}
+
+
 
 
 

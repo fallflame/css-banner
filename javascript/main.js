@@ -1,23 +1,25 @@
 (function(){
 
-	var $slider = document.getElementsByClassName("container")[0];
+	var banner = document.getElementsByClassName("countdown")[0];
+	var modal = document.getElementsByClassName("modal")[0];
 	var timeout;
 
-	/*
-	$slider.addEventListener("mouseenter", function(){
+	banner.addEventListener("mouseenter", function(){
 		timeout = setTimeout(function(){
-			document.getElementById("modal").className = 'modal show';
+			modal.className = 'modal show';
 		} ,3000);
 	});
-*/
 
-
-	$slider.addEventListener("click", function(){
-		document.getElementById("modal").className = 'modal show';
+	banner.addEventListener("click", function(){
+		modal.className = 'modal show';
 	});
 
-	$slider.addEventListener("mouseleave", function(){
+	banner.addEventListener("mouseleave", function(){
 		clearTimeout(timeout);
+	});
+	
+	modal.getElementsByClassName("close")[0].addEventListener('click', function(){
+		modal.className = 'modal';
 	});
 
 })();
