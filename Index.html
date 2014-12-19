@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
 <title>CSS3 Animation</title>
-<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/main.css"/>
 <link rel="stylesheet" href="css/reset.css"/>
 <link rel="stylesheet" href="css/modal.css"/>
 <link rel="stylesheet" href="css/animation.css"/>
+<link rel="stylesheet" href="css/countdown.css"/>
 
 </head>
 <body>
@@ -39,11 +40,12 @@
         </ul>
     </div>
 
-    <a href="#modal" class="countdown-mask">
-        <span>3</span>
-        <span>2</span>
-        <span>1</span>
-    </a>
+    <div class="countdown">
+        <div class='tip'>Openning...</div>
+        <div class="meter">
+            <span></span>
+        </div>
+    </div>
 
     <!-- Modal -->
     <div id="modal" class='modal'>

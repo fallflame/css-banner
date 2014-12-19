@@ -30,29 +30,6 @@
 	100% {  opacity:0; }
 }
 
-@-webkit-keyframes showthree {
-	0% { opacity:1; }
-	30% {  opacity:1; } 
-	33% {  opacity:0; } 
-}
-
-@-webkit-keyframes showtwo {
-	0% {  opacity:0; }
-	30% {  opacity:0; }
-	33% {  opacity:1; } 
-	63% {  opacity:1; } 
-	66% {  opacity:0; }
-	100%{  opacity:0; }
-}
-
-@-webkit-keyframes showone {
-	0% {  opacity:0; }
-	63% {  opacity:0; }
-	66% {  opacity:1; } 
-	97% {  opacity:1; } 
-	100% {  opacity:0; }
-}
-
 @-webkit-keyframes showdvd {
 	0% {  opacity:0; }
 	63% {  opacity:0; }
