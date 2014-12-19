@@ -1,0 +1,60 @@
+/* Countdown */
+.countdown {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+  	background: -webkit-linear-gradient(
+  		rgba(255,255,255,0),
+  		rgba(255,255,255,0.95) 43%,
+  		rgba(255,255,255,0.95) 53%,
+  		rgba(255,255,255,0)100% ); 
+	opacity: 0;
+	transition: 0.5s opacity;
+}
+
+.container:hover > .countdown {
+	opacity: 0.95;
+ 	transition: 0.5s opacity;
+}
+
+.countdown > .tip {
+	position: absolute;
+	font-size: 20px;
+	font-family: verdana;
+	top: 90px;
+	left: 50px;
+	color : black;
+}
+
+.countdown > .meter {
+	position: absolute;
+	height: 20px;
+	padding: 2px;
+	top: 113px;
+	left: 50px;
+	width: 200px;
+	background: #eee;
+	border-radius: 8px;
+	border : 1px solid #000;
+	box-shadow : 2px 2px 3px #444;;
+}
+
+.countdown > .meter > span {
+	width: 0;
+	display: block;
+	height: 100%;
+	border-radius: 7px 2px 2px 7px;
+	background-color: #428bca;
+	position: relative;
+	overflow: hidden;
+}
+
+.container:hover > .countdown > .meter > span {
+	width: 99%;
+ 	transition: 3s width linear;
+}
+
+
