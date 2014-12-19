@@ -6,7 +6,7 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-  	background: -webkit-linear-gradient(
+  	background: linear-gradient(
   		rgba(255,255,255,0),
   		rgba(255,255,255,0.95) 43%,
   		rgba(255,255,255,0.95) 53%,
@@ -19,6 +19,7 @@
 	opacity: 0.95;
  	transition: 0.5s opacity;
 }
+
 
 .countdown > .tip {
 	position: absolute;
@@ -33,6 +34,7 @@
 
 .countdown:hover > .tip {
 	-webkit-animation: typing 2.7s steps(3);
+			animation: typing 2.7s steps(3);
 }
 
 .countdown > .meter {
@@ -64,6 +66,10 @@
 }
 
 @-webkit-keyframes typing { 
+	from { width: 96px; } 
+	to 	 { width: 118px;}
+}
+@keyframes typing { 
 	from { width: 96px; } 
 	to 	 { width: 118px;}
 }

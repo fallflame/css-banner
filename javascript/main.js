@@ -2,6 +2,7 @@
 
 	var banner = document.getElementsByClassName("countdown")[0];
 	var modal = document.getElementsByClassName("modal")[0];
+
 	var timeout;
 
 	banner.addEventListener("mouseenter", function(){
@@ -17,9 +18,11 @@
 	banner.addEventListener("mouseleave", function(){
 		clearTimeout(timeout);
 	});
-	
+
+	/*
 	modal.getElementsByClassName("close")[0].addEventListener('click', function(){
 		modal.className = 'modal';
 	});
+	*/
 
 })();

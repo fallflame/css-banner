@@ -1,3 +1,9 @@
+@import url('banner.css');
+@import url('countdown.css');
+@import url('modal.css');
+@import url('modal-animation.css');
+@import url('smallscreen.css');
+
 .container {
 	position: absolute;
 	width: 300px;

@@ -7,22 +7,19 @@
 	left: 0;
 	z-index: 10;
 	background: rgba(0, 0, 0, 0.8);
-	opacity: 0;
 }
 
 .modal.show{
 	display: block;
-	opacity: 1;
-	transition: 1s opacity;
 }
 
 .modal-dialog {
 	background: url("../images/background.jpg") no-repeat;
-	margin: 30px auto;
+	margin: 50px auto;
 	position: relative;
 	width: 960px;
 	height: 600px;
-	font: bold 10px Avenir;
+	font: bold 10px Avenir,sans-serif;
 	color: #fff;
 }
 
