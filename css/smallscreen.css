@@ -1,0 +1,83 @@
+@media all and (max-width: 933px) {
+    
+	.modal-dialog{
+		width: 320px;
+		height: 480px;
+	}
+
+	.modal-dialog {
+		background: url("../images/background.jpg") no-repeat -370px 0px
+	}
+
+	/* hide some elements */
+	.text1, .text2, .menu, .footer > .text {
+		display: none;
+	}
+
+	.modal-dialog > .text3 {
+		top: 240px;
+		left: 210px;
+	}
+
+	.modal-dialog > .text4 {
+		top: 260px;
+		left: 210px;
+	}
+
+	.modal-dialog > .dvd-ps3 {
+		-webkit-transform: scale(0.6);
+		    -ms-transform: scale(0.6);
+		        transform: scale(0.6);
+		left: 10px;
+		top: 80px;
+	}
+
+	.modal-dialog > .dvd-ps4 {
+		-webkit-transform: scale(0.6);
+		    -ms-transform: scale(0.6);
+		        transform: scale(0.6);
+		top: 60px;
+		left: 0px;
+	}
+
+	.modal.show > .modal-dialog > .dvd-ps4:hover{
+		-webkit-transform: scale(0.6);
+		    -ms-transform: scale(0.6);
+		        transform: scale(0.6);
+	}
+
+	.modal.show > .modal-dialog > .dvd-ps3:hover{
+		-webkit-transform: scale(0.6);
+		    -ms-transform: scale(0.6);
+		        transform: scale(0.6);
+	}
+
+	.modal-dialog > .footer > .logo-ubisoft {
+		-webkit-transform: scale(0.6);
+		    -ms-transform: scale(0.6);
+		        transform: scale(0.6);
+		bottom: 0px;
+		left: -20px;
+	}
+
+	.modal-dialog > .footer > .button-facebook {
+		bottom: 10px;
+		left: 150px;
+	}
+
+	.modal-dialog > .footer > .button-twitter {
+		bottom: 40px;
+		left: 150px;
+	}
+
+	.modal-dialog > .pre-order {
+		bottom: 110px;
+		left: 70px;
+	}
+
+	.modal-dialog > .close{
+		top: 20px;
+		left: 280px;
+	}
+
+}
